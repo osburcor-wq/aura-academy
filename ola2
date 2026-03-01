@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Academy | Tenis y Pádel a Domicilio en Madrid</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0e2f26;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b3d2e, #145c43);
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 12px;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: #0a241d;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #d1fae5;
+      font-weight: 600;
+    }
+
+    nav a.whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    section {
+      padding: 90px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 35px;
+      text-align: center;
+      color: #bbf7d0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #123c31;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+
+    .about {
+      background: #123c31;
+      border-radius: 22px;
+      padding: 45px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 520px;
+      margin: auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 16px;
+      border-radius: 12px;
+      border: none;
+      background: #0a241d;
+      color: white;
+    }
+
+    .contact button {
+      padding: 16px;
+      border-radius: 30px;
+      border: none;
+      background: #16a34a;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .review {
+      font-style: italic;
+      opacity: 0.95;
+    }
+
+    footer {
+      background: #071a15;
+      color: #86efac;
+      text-align: center;
+      padding: 35px;
+      margin-top: 60px;
+    }
+
+    /* WHATSAPP FLOTANTE */
+
+    .wa-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Aura Academy</h1>
+  <p>Tenis y Pádel a Domicilio · Madrid</p>
+</header>
+
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#metodo">Método</a>
+  <a href="#opiniones">Opiniones</a>
+  <a href="#contacto">Contacto</a>
+  <a class="whatsapp" href="https://wa.me/34699721401" target="_blank">WhatsApp</a>
+</nav>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Tenis a Domicilio</h3>
+      <p>Entrenamientos personalizados para todos los niveles.</p>
+    </div>
+    <div class="card">
+      <h3>Pádel a Domicilio</h3>
+      <p>Clases dinámicas individuales o en grupo.</p>
+    </div>
+    <div class="card">
+      <h3>Coaches Profesionales</h3>
+      <p>Entrenadores titulados con metodología moderna.</p>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <h2>Nuestro Método</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Evaluación Inicial</h3>
+      <p>Analizamos tu nivel y objetivos desde la primera sesión.</p>
+    </div>
+    <div class="card">
+      <h3>Plan Personalizado</h3>
+      <p>Diseñamos entrenamientos adaptados a cada alumno.</p>
+    </div>
+    <div class="card">
+      <h3>Seguimiento</h3>
+      <p>Medimos progreso y ajustamos para mejorar resultados.</p>
+    </div>
+  </div>
+</section>
+
+<section id="opiniones">
+  <h2>Opiniones</h2>
+  <div class="grid">
+    <div class="card review">
+      “Gran profesional. Mejora real en pocas semanas.” ⭐⭐⭐⭐⭐
+      <br><br>— Carlos M.
+    </div>
+    <div class="card review">
+      “Clases dinámicas y muy bien adaptadas.” ⭐⭐⭐⭐⭐
+      <br><br>— Laura G.
+    </div>
+    <div class="card review">
+      “Muy recomendable para niños.” ⭐⭐⭐⭐⭐
+      <br><br>— Marta R.
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form class="contact">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Mensaje"></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Aura Academy · Tenis y Pádel a Domicilio en Madrid · auracademy.es
+</footer>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a class="wa-float" href="https://wa.me/34699721401" target="_blank">💬</a>
+
+</body>
+</html>
