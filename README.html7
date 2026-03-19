@@ -113,7 +113,6 @@
 <body>
 
   <header id="inicio">
-    <img src="logo.png" alt="Aura Academy Logo" style="max-width:180px;margin-bottom:20px;" />
     <h1>Aura Academy</h1>
     <p>Clases de Tenis y Pádel a Domicilio · Entrena donde quieras</p>
   </header>
