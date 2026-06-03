@@ -22,19 +22,38 @@ background:#000;
 color:white;
 }
 
+/* HEADER */
 header{
 text-align:center;
 padding:40px 20px;
 }
 
-.logo{
-display:block;
-margin:auto;
-width:95%;
-max-width:1200px;
-height:auto;
+.logo-text{
+font-size:4.5rem;
+font-weight:700;
+text-align:center;
+margin:0;
+
+background:linear-gradient(90deg, #9BE000, #25D366);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:0 0 20px rgba(155, 224, 0, 0.35);
+letter-spacing:2px;
+
+animation:glow 2.5s ease-in-out infinite alternate;
 }
 
+@keyframes glow{
+from{
+text-shadow:0 0 10px rgba(155, 224, 0, 0.3);
+}
+to{
+text-shadow:0 0 25px rgba(37, 211, 102, 0.6);
+}
+}
+
+/* HERO */
 .hero{
 padding:30px 20px;
 text-align:center;
@@ -130,6 +149,10 @@ color:#999;
 font-size:2rem;
 }
 
+.logo-text{
+font-size:2.8rem;
+}
+
 }
 
 </style>
@@ -138,9 +161,7 @@ font-size:2rem;
 <body>
 
 <header>
-
-<img src="logo.png" alt="Aura Academy" class="logo">
-
+  <h1 class="logo-text">Aura Academy</h1>
 </header>
 
 <div class="hero">
@@ -166,23 +187,17 @@ Reservar por WhatsApp
 
 <div class="card">
 <h3>🎾 Tenis</h3>
-<p>
-Clases individuales y grupales para niños y adultos.
-</p>
+<p>Clases individuales y grupales para niños y adultos.</p>
 </div>
 
 <div class="card">
 <h3>🏓 Pádel</h3>
-<p>
-Mejora tu técnica, táctica y condición física.
-</p>
+<p>Mejora tu técnica, táctica y condición física.</p>
 </div>
 
 <div class="card">
 <h3>🏆 Entrenadores Profesionales</h3>
-<p>
-Profesionales con experiencia en enseñanza y competición.
-</p>
+<p>Profesionales con experiencia en enseñanza y competición.</p>
 </div>
 
 </div>
@@ -194,11 +209,9 @@ Profesionales con experiencia en enseñanza y competición.
 <h2>¿Quiénes Somos?</h2>
 
 <div class="card">
-
 <p>
 Aura Academy nace con el objetivo de acercar el tenis y el pádel a cualquier persona, ofreciendo clases cómodas, personalizadas y de alta calidad directamente en urbanizaciones, clubes o pistas cercanas.
 </p>
-
 </div>
 
 </section>
@@ -211,23 +224,17 @@ Aura Academy nace con el objetivo de acercar el tenis y el pádel a cualquier pe
 
 <div class="review">
 <div class="stars">★★★★★</div>
-<p>
-Muy profesionales y cercanos. Mi hijo ha mejorado muchísimo.
-</p>
+<p>Muy profesionales y cercanos. Mi hijo ha mejorado muchísimo.</p>
 </div>
 
 <div class="review">
 <div class="stars">★★★★★</div>
-<p>
-La comodidad de entrenar en nuestra urbanización es increíble.
-</p>
+<p>La comodidad de entrenar en nuestra urbanización es increíble.</p>
 </div>
 
 <div class="review">
 <div class="stars">★★★★★</div>
-<p>
-Clases dinámicas, divertidas y muy bien organizadas.
-</p>
+<p>Clases dinámicas, divertidas y muy bien organizadas.</p>
 </div>
 
 </div>
@@ -240,9 +247,7 @@ Clases dinámicas, divertidas y muy bien organizadas.
 
 <h2>Reserva tu Clase</h2>
 
-<p>
-Contacta directamente por WhatsApp y recibe información sin compromiso.
-</p>
+<p>Contacta directamente por WhatsApp y recibe información sin compromiso.</p>
 
 <br>
 
@@ -255,9 +260,7 @@ Hablar por WhatsApp
 </section>
 
 <footer>
-
 © 2026 Aura Academy · Madrid
-
 </footer>
 
 </body>
