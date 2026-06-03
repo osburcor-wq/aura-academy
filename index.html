@@ -23,37 +23,22 @@ color:white;
 }
 
 /* HEADER */
+
 header{
 text-align:center;
-padding:40px 20px;
+padding:20px 20px 10px;
 }
 
-.logo-text{
-font-size:4.5rem;
-font-weight:700;
-text-align:center;
-margin:0;
-
-background:linear-gradient(90deg, #9BE000, #25D366);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-text-shadow:0 0 20px rgba(155, 224, 0, 0.35);
-letter-spacing:2px;
-
-animation:glow 2.5s ease-in-out infinite alternate;
-}
-
-@keyframes glow{
-from{
-text-shadow:0 0 10px rgba(155, 224, 0, 0.3);
-}
-to{
-text-shadow:0 0 25px rgba(37, 211, 102, 0.6);
-}
+.logo{
+display:block;
+margin:0 auto;
+width:100%;
+max-width:1000px;
+height:auto;
 }
 
 /* HERO */
+
 .hero{
 padding:30px 20px;
 text-align:center;
@@ -70,6 +55,7 @@ font-size:1.2rem;
 color:#ddd;
 max-width:700px;
 margin:auto;
+line-height:1.7;
 }
 
 .btn{
@@ -81,6 +67,11 @@ color:white;
 text-decoration:none;
 border-radius:40px;
 font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 section{
@@ -149,8 +140,8 @@ color:#999;
 font-size:2rem;
 }
 
-.logo-text{
-font-size:2.8rem;
+.logo{
+max-width:450px;
 }
 
 }
@@ -161,7 +152,7 @@ font-size:2.8rem;
 <body>
 
 <header>
-  <h1 class="logo-text">Aura Academy</h1>
+<img src="logo.png" alt="Aura Academy" class="logo">
 </header>
 
 <div class="hero">
@@ -247,7 +238,9 @@ Aura Academy nace con el objetivo de acercar el tenis y el pádel a cualquier pe
 
 <h2>Reserva tu Clase</h2>
 
-<p>Contacta directamente por WhatsApp y recibe información sin compromiso.</p>
+<p>
+Contacta directamente por WhatsApp y recibe información sin compromiso.
+</p>
 
 <br>
 
